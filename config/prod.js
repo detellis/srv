@@ -1,5 +1,3 @@
-const { stripePublishableKey, stripeSecretKey } = require("./dev");
-
 module.exports = {
     gID: process.env.GID,
     gSecret: process.env.GSECRET,
