@@ -25,6 +25,7 @@ module.exports = app => {
         console.log('req', req.user);
         res.send(req.user);
     })
+
 }
 
 
