@@ -7,5 +7,5 @@ if (process.env.NODE_ENV === 'production' ) {
     return;
 } else {
     console.log("DEV ENV", process.env.NODE_ENV);
-    module.exports = require('./dev');
+    // module.exports = require('./dev');
 }
