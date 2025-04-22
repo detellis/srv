@@ -1,17 +1,21 @@
 {
-  "name": "reactserver",
+  "name": "server",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    "dev": "nodemon index.js"
+    "devserver": "nodemon index.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run devserver\" \"npm run client\""
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "concurrently": "^9.1.2",
     "cookie-session": "^2.1.0",
+    "eslint": "^9.25.1",
     "express": "^5.1.0",
     "express-session": "^1.18.1",
     "mongoose": "^8.13.2",
